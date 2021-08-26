@@ -1,6 +1,13 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
@@ -25,9 +32,9 @@ public class SimplePresentationScreen extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
-		setTitle("TdP-DCIC-UNS 2021 :: Pantalla de presentación");
+		setTitle("TdP-DCIC-UNS 2021 :: Pantalla de presentacion");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(new Dimension(615, 250));
+		setSize(new Dimension(650, 341));
 		setResizable(false);
 		setContentPane(contentPane);
 		
@@ -39,7 +46,7 @@ public class SimplePresentationScreen extends JFrame {
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabInformation = new JPanel();
 		tabInformation.setPreferredSize(new Dimension(425, 275));
-		tabbedPane.addTab("Información del alumno", null, tabInformation, "Muestra la información declarada por el alumno");
+		tabbedPane.addTab("Informacion del alumno", null, tabInformation, "Muestra la informacion declarada por el alumno");
 		contentPane.add(tabbedPane, BorderLayout.WEST);
 	}
 }
